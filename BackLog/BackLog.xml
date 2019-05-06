@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackLog</name>
+    </assembly>
+    <members>
+        <member name="T:BackLog.Controllers.IdeaController">
+            <summary>
+            Idea Controller.
+            </summary>
+        </member>
+        <member name="T:BackLog.Program">
+            <summary>
+            Default launch.
+            </summary>
+        </member>
+        <member name="M:BackLog.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Create WebHost builder.
+            </summary>
+            <param name="args">Parameters.</param>
+            <returns>WebHost builder built.</returns>
+        </member>
+        <member name="M:BackLog.Program.Main(System.String[])">
+            <summary>
+            Launch method.
+            </summary>
+            <param name="args">Parameters.</param>
+        </member>
+        <member name="T:BackLog.Startup">
+            <summary>
+            Startup.
+            </summary>
+        </member>
+        <member name="M:BackLog.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="configuration">Default configuration.</param>
+        </member>
+        <member name="P:BackLog.Startup.Configuration">
+            <summary>
+            Configuration.
+            </summary>
+        </member>
+        <member name="M:BackLog.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            Method called by the runtime. Method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">Application builder.</param>
+            <param name="env">Hosting environment.</param>
+            <param name="loggerFactory">Logger factory.</param>
+        </member>
+        <member name="M:BackLog.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Method called by the runtime. Method to add services to the container.
+            </summary>
+            <param name="services">Services collection.</param>
+        </member>
+    </members>
+</doc>
