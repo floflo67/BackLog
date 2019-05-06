@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Service;
 using Swashbuckle.AspNetCore.Swagger;
 using UnitOfWork;
 
@@ -76,6 +77,8 @@ namespace BackLog
                 .AddDbContext<BacklogContext>(opt => opt.UseInMemoryDatabase("UnitOfWork"))
                 .AddUnitOfWork<BacklogContext>();
             //.AddCustomRepository<Blog, CustomBlogRepository>();
+
+            services.AddScoped(typeof(IdeaService));
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>

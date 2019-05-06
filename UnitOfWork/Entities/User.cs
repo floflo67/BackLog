@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace UnitOfWork.Entities
+﻿namespace UnitOfWork.Entities
 {
     /// <summary>
     /// A user object stored in the database.
@@ -21,10 +19,5 @@ namespace UnitOfWork.Entities
         /// Lastname of the user.
         /// </summary>
         public string LastName { get; set; }
-
-        /// <summary>
-        /// Votes associated to the user.
-        /// </summary>
-        public List<Vote> Votes { get; set; }
     }
 }
